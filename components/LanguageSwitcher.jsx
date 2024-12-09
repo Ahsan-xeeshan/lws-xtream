@@ -58,15 +58,15 @@ const LanguageSwitcher = () => {
         </button>
 
         {showManu && (
-          <div classNameName="absolute right-0 top-full mt-2 w-40 rounded-md bg-black p-2 z-10 shadow-lg">
+          <div className="absolute right-0 top-full mt-2 w-40 rounded-md bg-black p-2 z-10 shadow-lg">
             {languages.map((entry) => (
               <li
                 key={entry.code}
                 onClick={() => handleLanguageChange(entry.code)}
-                classNameName="flex items-center gap-2 p-2 rounded-md cursor-pointer hover:bg-gray-400"
+                className="flex items-center gap-2 p-2 rounded-md cursor-pointer hover:bg-gray-800"
               >
                 <Image
-                  classNameName="max-w-8"
+                  className="max-w-8"
                   src={
                     entry.language === "English"
                       ? "/images/usa.png"
